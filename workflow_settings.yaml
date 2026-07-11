@@ -2,3 +2,4 @@ defaultProject: dataprep-project-502019
 defaultDataset: dataform
 defaultAssertionDataset: dataform_assertions
 dataformCoreVersion: 3.0.52
+defaultLocation: europe-west4
