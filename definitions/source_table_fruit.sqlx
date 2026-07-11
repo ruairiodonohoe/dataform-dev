@@ -1,0 +1,29 @@
+config {
+    type: "table"
+    ,name: "source_fruit"
+    ,description: "Description of the fruit table"
+    ,tags: ["favourite", "least_liked"]
+    ,assertions: {
+        uniqueKey: ["fruit"],
+        rowConditions: [
+            'count > 0',
+        ]
+    }
+}
+
+SELECT
+    "apples" AS fruit,
+    3 AS count
+
+UNION ALL
+SELECT
+    "oranges" AS fruit,
+    5 AS count
+UNION ALL
+SELECT
+    "pears" AS fruit,
+    1 AS count
+UNION ALL
+SELECT 
+    "bananas" AS fruit,
+    0 AS count

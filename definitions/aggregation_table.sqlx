@@ -6,4 +6,4 @@ config {
 
 SELECT
     SUM(number) AS total
-FROM ${ref('source_table')} 
+FROM ${ref('source')} 
