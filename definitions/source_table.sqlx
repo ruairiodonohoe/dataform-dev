@@ -1,6 +1,8 @@
 config {
-    type: "table",
-    description: "Description of the first table"
+    type: "table"
+    ,name: "source"
+    ,description: "Description of the first table"
+    //,tags: ["favourite", "least_liked"]
 }
 
 SELECT 1 AS number

@@ -1,0 +1,5 @@
+config {type: "assertion"}
+
+SELECT *
+FROM ${ref("source_fruit")}
+WHERE fruit IS NULL
